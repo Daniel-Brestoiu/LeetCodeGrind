@@ -5,7 +5,7 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(self, l1, l2):
         def getNum(node, depth):
             if (node.next == None):
                 return (node.val * 10 ** depth)
